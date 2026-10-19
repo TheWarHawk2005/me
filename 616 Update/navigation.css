@@ -1,0 +1,41 @@
+#loaded-navbar {
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	/* clip anything that still bleeds */
+	padding: 15px 0px 15px 15px;
+	color: white;
+}
+
+#links {
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	justify-content: right;
+	align-items: center;
+	grid-auto-flow: column;
+}
+
+#links li {
+	display: block;
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+	padding: 15px 10px 15px 10px;
+	transition: background-color .10s;
+}
+
+a:hover {
+	background-color: #b30d0d;
+}
+
+a:visited {
+	color: white;
+}

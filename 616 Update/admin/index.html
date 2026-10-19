@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Functional strength training and certified nutrition coaching.">
+	<!-- <meta name="google-site-verification" content="hCoFnInexclXzoFhasuk6AGWoQ-ccaz9CC-R9QXzfNY" /> -->
+	<title>Admin Dashboard - 616 Strength & Nutrition</title>
+	<link rel="canonical" href="https://616strength.com/" />
+	<link rel="icon" type="image/png" href="/assets/ui/admin_favicon.svg" />
+	<link rel="stylesheet" href="/admin/style.css">
+	<script src="admin.js" type="module"></script>
+</head>
+
+<body>
+	<nav>
+
+	</nav>
+	<main>
+		<div id="login-container">
+			<input id="email" type="email" placeholder="email" value="louis.h.dev@gmail.com">
+			<input id="password" type="password" placeholder="password" value="password">
+			<input id="login" type="submit" value="Request Access">
+		</div>
+
+		<div id="dashboard-container">
+			<section id="sidebar">
+				<div id="pages">
+					<a class="pages-link" href="#banner-content">Banner</a>
+				</div>
+				<div id="profile" class="pages-link" onclick="location.hash='#profile-content'" title="Edit Profile">
+					<img id="sidebar-avatar" class="user-avatar">
+					<span id="sidebar-name" class="user-name"></span>
+					<img id="open-profile-chevron" src="/assets/ui/chevron-right-square-svgrepo-com.svg">
+				</div>
+			</section>
+			<section id="header">
+				<input id="update-site-content" type="button" value="SAVE">
+
+			</section>
+			<section id="dashboard-view">
+				<div class="page" id="profile-content">
+					<section class="page-header">
+						<h2>Profile</h2>
+					</section>
+					<section class="page-section">
+						<label>
+							NAME
+							<input id="input-profile-name" data-read-write-auth="name" class="" type="text"
+								maxlength="30" placeholder="e.g. John Smith">
+						</label>
+						<label>
+							AVATAR
+							<input id="input-profile-avatar" data-read-write-auth="avatar" class="" type="file" accept=".jpg, .png">
+						</label>
+						<img id="profile-avatar" class="user-avatar">
+					</section>
+				</div>
+				<div class="page" id="banner-content">
+					<h2>Announcement Banner</h2>
+					<label>
+						BANNER TEXT
+						<input id="banner-text" data-read-write="banner_text" class="full-width" type="text"
+							placeholder="e.g. Classes are back open!">
+					</label>
+					<label>
+						MOBILE BANNER TEXT
+						<input id="mobile-banner-text" data-read-write="mobile_banner_text" class="full-width" type="text"
+							placeholder="e.g. Classes are back open!">
+					</label>
+					<label>
+						BANNER COLOR
+						<input id="banner-color" data-read-write="banner_color" type="color">
+					</label>
+				</div>
+		</div>
+		</section>
+		</div>
+	</main>
+	<footer>
+
+	</footer>
+</body>
+
+</html>
